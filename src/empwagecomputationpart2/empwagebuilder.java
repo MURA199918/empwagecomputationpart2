@@ -22,7 +22,6 @@ public class empwagebuilder {
 				companyempwage c=new companyempwage(name,workingdays,wageperhour,workinghrsinday);
 				double monthlywage=c.calculateempwage();
 				System.out.println(name+" monthly wage"+monthlywage);
-				System.out.println(name+" daily wage"+c.dailywage);
 				companies.add(c);
 				select=1;
 				break;
@@ -30,6 +29,15 @@ public class empwagebuilder {
 				System.out.println("Thankyou");
 				select=0;
 				break;
+			}
+		}
+		if(companies.size()!=0) {
+			System.out.println("which company you wanna see?");
+			String name=sc.next();
+			for(int i=0;i<companies.size();i++) {
+				if(companies.get(i).nameofcompany.equals(name)) {
+					System.out.println("total wage is"+companies.get(i).totalmonthlywage);
+				}
 			}
 		}
 	}
