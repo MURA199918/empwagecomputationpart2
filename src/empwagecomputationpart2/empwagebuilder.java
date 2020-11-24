@@ -22,6 +22,7 @@ public class empwagebuilder {
 				companyempwage c=new companyempwage(name,workingdays,wageperhour,workinghrsinday);
 				double monthlywage=c.calculateempwage();
 				System.out.println(name+" monthly wage"+monthlywage);
+				System.out.println(name+" daily wage"+c.dailywage);
 				companies.add(c);
 				select=1;
 				break;
