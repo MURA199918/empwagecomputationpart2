@@ -24,6 +24,4 @@ public class empwagebuilder {
     }
 	
 }
-public interface computewageinterface{
-	public double calculateempwage();
-}
+
